@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+	<head>
+		<meta charset="utf-8">
+		<title>Sample Carousel</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+	<div id="page-wrapper">
+		<section class="carousel-app">
+			<div class="carousel-wrapper">
+				<div id="frame">
+				</div>
+				<div id="footer">
+					<button id="prev" class="shift-prev">Previous</button>
+					<button id="next" class="shift-next">Next</button>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="lib/underscore/underscore.js"></script>
+	<script src="lib/backbone/backbone.js"></script>
+	<script src="lib/backbone.localstorage/backbone.localStorage.js"></script>
+	<script src="js/models/carousel.js"></script>
+	<script src="js/views/app-view.js"></script>
+	<script src="js/app.js"></script>
+	</body>
+</html>

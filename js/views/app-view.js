@@ -38,12 +38,12 @@ var app = app || {};
 	        this.model.lastActive = Math.min(this.model.firstActive + this.model.currentGroupSize - 1, slides.length - 1);
 
 			// make elements before currentGroup overflow to the left of the frame
-			for(let i = 0; i < this.model.firstActive; i++){
+			for(var i = 0; i < this.model.firstActive; i++){
 				slides[i].style.marginLeft = -currentElementWidth + 'px';
 			}
 
 			// restore margin of other elements (left aligned, by design)
-			for(let i = this.model.firstActive; i < slides.length; i++){
+			for(var i = this.model.firstActive; i < slides.length; i++){
 				slides[i].style.marginLeft = "0px";
 			}
 
@@ -57,7 +57,7 @@ var app = app || {};
 			slides[this.model.firstActive].style.marginLeft = Math.floor(remainingSpace / 2) + 'px';
 
 			if(this.model.setupAnimations){
-				for(let i = 0; i < slides.length; i++){
+				for(var i = 0; i < slides.length; i++){
 					slides[i].style.transition = "margin 0.75s ease-in-out";
 				}
 				this.model.setupAnimations = false;

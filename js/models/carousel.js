@@ -8,7 +8,7 @@ var app = app || {};
 		localStorage: new Backbone.LocalStorage('carousel-backbone'),
 		initialize: function () {
 			var r = null;
-			for(let i = 0; i < this.get('data').length; i++){
+			for(var i = 0; i < this.get('data').length; i++){
 				r = this.getRandomInt(0,this.get('data')[i].images.length - 1);
 				this.randomIndex.push(r);
 			}
